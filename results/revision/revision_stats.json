@@ -1,0 +1,169 @@
+{
+ "fast_constant_censoring": {
+  "n_events": 1550,
+  "n_users": 20,
+  "median_min": 26.39,
+  "iqr": [
+   10.72,
+   67.55
+  ],
+  "n_at_300min_ceiling": 90,
+  "n_beyond_40min_window": 597,
+  "pct_beyond_40min_window": 38.5,
+  "warm_n": 650,
+  "cool_n": 900,
+  "warm_median": 22.01,
+  "cool_median": 30.86,
+  "r2_median": 0.45,
+  "gain_median": 0.75,
+  "kaplan_meier_median_min": 26.39,
+  "kaplan_meier_S40": 0.385,
+  "restricted_median_min": 12.73,
+  "restricted_n": 953,
+  "clustered_bootstrap_95ci": [
+   23.0,
+   31.1
+  ],
+  "step_magnitude": {
+   "small_n": 1032,
+   "small_median": 30.6,
+   "big_n": 518,
+   "big_median": 20.6,
+   "mannwhitney_p": 2.9212169253890147e-07
+  }
+ },
+ "trait_correlations": {
+  "BMI": {
+   "n": 20,
+   "rho": 0.144,
+   "p": 0.544
+  },
+  "Age_n": {
+   "n": 20,
+   "rho": 0.481,
+   "p": 0.032
+  },
+  "female": {
+   "n": 20,
+   "rho": -0.347,
+   "p": 0.134
+  },
+  "coldhand": {
+   "n": 20,
+   "rho": -0.082,
+   "p": 0.732
+  },
+  "exercise": {
+   "n": 8,
+   "rho": -0.126,
+   "p": 0.766
+  },
+  "years_SG": {
+   "n": 17,
+   "rho": -0.132,
+   "p": 0.613
+  },
+  "age_BMI_corr": {
+   "rho": 0.051,
+   "p": 0.832
+  },
+  "age_joint_OLS": {
+   "b": 0.482,
+   "se": 0.363,
+   "p": 0.203
+  }
+ },
+ "ctcd_paired_folds": {
+  "ALL_+m7_minus_base": {
+   "mean": -0.0581,
+   "sd": 0.1042,
+   "t": -1.25,
+   "p": 0.28
+  },
+  "ALL_+m15_minus_base": {
+   "mean": -0.0588,
+   "sd": 0.1097,
+   "t": -1.2,
+   "p": 0.3
+  },
+  "ALL_+m30_minus_base": {
+   "mean": -0.0573,
+   "sd": 0.1048,
+   "t": -1.22,
+   "p": 0.29
+  },
+  "Heated_m15_minus_base": {
+   "mean": 0.11,
+   "sd": 0.24,
+   "t": 1.02,
+   "p": 0.36,
+   "per_fold": [
+    0.53,
+    0.029,
+    0.004,
+    0.003,
+    -0.024
+   ]
+  },
+  "+m15_minus_+m7": {
+   "mean": -0.00074,
+   "sd": 0.00581,
+   "t": -0.29,
+   "p": 0.79
+  },
+  "+m15_minus_+m30": {
+   "mean": -0.00149,
+   "sd": 0.00821,
+   "t": -0.41,
+   "p": 0.71
+  },
+  "repeated_partitions_m15_minus_base": {
+   "mean": -0.0646,
+   "sd": 0.0177,
+   "min": -0.0935,
+   "max": -0.0346,
+   "n_negative": 10,
+   "n_partitions": 10
+  }
+ },
+ "likelihood_ratio_tests": {
+  "InGauge_strong_N40": {
+   "n_votes": 6000,
+   "dNLL_vs_fixed30": 0.0849,
+   "LRT_statistic": 1019.0
+  },
+  "InGauge_strong_N100": {
+   "n_votes": 12000,
+   "dNLL_vs_fixed30": 0.0791,
+   "LRT_statistic": 1899.0
+  },
+  "DORN_weak_N40": {
+   "n_votes": 6000,
+   "dNLL_vs_fixed30": 0.0195,
+   "LRT_statistic": 234.0
+  },
+  "DORN_weak_N100": {
+   "n_votes": 12000,
+   "dNLL_vs_fixed30": 0.0194,
+   "LRT_statistic": 465.0
+  }
+ },
+ "tau_sensitivity_1800ep": {
+  "true_days": [
+   7.0,
+   14.0,
+   21.0,
+   28.0,
+   35.0
+  ],
+  "recovered_days": [
+   6.79,
+   12.52,
+   20.16,
+   28.71,
+   38.7
+  ],
+  "mean_abs_err_d": 1.39,
+  "max_abs_err_d": 3.7
+ }
+}

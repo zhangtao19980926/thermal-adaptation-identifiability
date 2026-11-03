@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pkl
+*.pkl.zip
+data/raw/
+outputs/
+_lo_profile/
